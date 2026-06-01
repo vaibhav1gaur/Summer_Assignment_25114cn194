@@ -2,26 +2,16 @@
 
 int main() {
 
-    int year;
+    int numb;
+    int sum=0;
 
-    printf("enter year = ");
-    scanf("%d",&year);
+    scanf("%d",&numb);
 
-    if(year%4==0) {
-        if(year%100==0) {
-            if(year%400==0) {
-                printf("leap year");
-            } else {
-                printf("not leap year");
-            }
-        } else {
-            printf("leap year");
-        }
-    } else {
-        printf("not leap year");
+    for(int i=0; i<=numb; i++) {
+        sum = sum + i;
     }
 
-
+    printf("%d",sum);
 
     return 0;
 }
